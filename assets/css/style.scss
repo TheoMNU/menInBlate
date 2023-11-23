@@ -1,4 +1,9 @@
-@import './settings.scss';
-@import './layout/header.scss';
-@import './layout/navBar.scss';
-@import './layout/footer.scss';
+@import './_settings.scss';
+@import './layout/_header.scss';
+@import './layout/_navBar.scss';
+@import './layout/_footer.scss';
+
+main {
+    height: 500px;
+    width: 100%;
+}

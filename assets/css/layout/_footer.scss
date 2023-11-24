@@ -8,62 +8,70 @@ footer {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    padding: 50px 0;
-}
-footer h4 {
-    padding: 10px;
-}
-footer li {
-    padding: 5px;
-}
-/* -------------------- Left-Container -------------------- */
-footer .left-part {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-/* -------------------- Left-Container -------------------- */
-footer .center-part {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-footer .center-part li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-/* -------------------- Right-Container -------------------- */
-footer .right-part {
-    background-color: $color3;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 0 50px;
-}
-footer .right-part ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    padding-top: 20px;
-}
-footer .right-part i {
-    font-size: 2rem;
-}
-/* -------------------- Footer animation-------------------- */
-footer a:hover,
-footer li:hover {
-    color: $color1;
-    transition: ease-in-out 0.3s;
-    scale: 1.2;
-}
+    padding: 20px 0;
 
-footer i:hover {
-    color: $color1;
-    transition: ease-in-out 0.3s;
-    scale: 1.5;
+    h4 {
+        padding: 10px;
+    }
+    li {
+        padding: 5px;
+    }
+    /* -------------------- Left-Container -------------------- */
+    .left-part {
+        background-color: $color3;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            padding-top: 20px;
+            i {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    /* -------------------- Left-Container -------------------- */
+    .center-part {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    /* -------------------- Right-Container -------------------- */
+    .right-part {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    /* -------------------- Footer animation-------------------- */
+    a:hover,
+    li:hover {
+        color: $color1;
+        transition: ease-in-out 0.2s;
+        scale: 1.2;
+    }
+    i:hover {
+        color: $color1;
+        transition: ease-in-out 0.2s;
+        scale: 1.3;
+    }
 }

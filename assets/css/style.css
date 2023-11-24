@@ -23,7 +23,7 @@
 header {
   display: flex;
   width: 100%;
-  height: 15vh;
+  height: 100px;
   background-color: #727272;
   padding: 5px 10px;
 }
@@ -106,7 +106,6 @@ header .header-right p {
 /* ------------------- Variable ----------------- */
 /* --------------------- NavBar ----------------- */
 nav {
-  display: flex;
   width: 100%;
   position: relative;
   margin-bottom: 9px;
@@ -166,12 +165,6 @@ nav::after {
 @media screen and (max-width: 768px) {
   nav {
     padding: 10px;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-  }
-  nav ul {
-    display: none;
   }
   nav .hamburger {
     width: 100%;
@@ -179,9 +172,10 @@ nav::after {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    position: relative;
   }
   nav .hamburger i {
-    position: fixed;
+    position: absolute;
     left: 20px;
     font-size: 1.5rem;
     display: flex;
@@ -198,8 +192,46 @@ nav::after {
     height: 100%;
     border-radius: 5px;
   }
-  nav .hamburger a:hover {
+  nav .nav-Bar {
+    display: none;
+  }
+  nav .nav-Bar.active-navBar {
+    display: flex;
+    flex-direction: column;
+  }
+  nav .nav-Bar.active-navBar ul {
+    display: flex;
+  }
+  nav .nav-Bar.active-navBar ul::before {
+    display: none;
+  }
+  nav .nav-Bar.active-navBar li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  nav .nav-Bar.active-navBar a {
+    color: #000000;
+  }
+  nav .nav-Bar.active-navBar .active a {
+    color: #fe0000;
+  }
+  nav .nav-Bar.active-navBar li:hover {
+    border-top: none;
+    padding: 0;
+    margin: 0;
+  }
+  nav .nav-Bar.active-navBar .active:before {
+    display: none;
+  }
+  nav .nav-Bar.active-navBar a:hover {
+    margin: 0;
+    padding: 0;
     scale: 1;
+    color: none;
   }
 }
 * {
@@ -293,5 +325,5 @@ footer i:hover {
 main {
   height: 500px;
   width: 100%;
-  background-color: #727272;
+  background-color: teal;
 }/*# sourceMappingURL=style.css.map */

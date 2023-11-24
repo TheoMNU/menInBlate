@@ -251,10 +251,8 @@ nav::after {
 footer {
   background-color: #727272;
   display: flex;
-  justify-content: space-around;
   width: 100%;
   padding: 20px 0;
-  /* -------------------- Left-Container -------------------- */
   /* -------------------- Left-Container -------------------- */
   /* -------------------- Right-Container -------------------- */
   /* -------------------- Footer animation-------------------- */
@@ -265,58 +263,106 @@ footer h4 {
 footer li {
   padding: 5px;
 }
-footer .left-part {
+footer .left-container {
+  width: 33%;
+}
+footer .left-container .left-part {
   background-color: #727272;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 }
-footer .left-part ul {
+footer .left-container .left-part ul {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
-  padding-top: 20px;
+  padding: 10px 0 20px 0;
 }
-footer .left-part ul i {
+footer .left-container .left-part ul i {
   font-size: 2rem;
 }
-footer .center-part {
+footer .right-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 67%;
+}
+footer .right-container .center-part {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 }
-footer .center-part ul {
+footer .right-container .center-part ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-footer .right-part {
+footer .right-container .right-part {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 }
-footer .right-part li {
+footer .right-container .right-part ul {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-footer a:hover,
+footer li a:hover {
+  color: #fe0000;
+  transition: ease-in-out 0.2s;
+  scale: 1.2;
+}
+footer i:hover,
 footer li:hover {
   color: #fe0000;
   transition: ease-in-out 0.2s;
   scale: 1.2;
 }
-footer i:hover {
-  color: #fe0000;
-  transition: ease-in-out 0.2s;
-  scale: 1.3;
+footer a:visited,
+footer i:visited,
+footer li:visited {
+  color: #000000;
+  scale: 1;
+}
+footer a:active,
+footer i:active,
+footer li:active {
+  color: #000000;
+  scale: 1;
 }
 
+@media screen and (max-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+  }
+  footer .right-container {
+    width: 100%;
+  }
+  footer a:hover,
+  footer li:hover,
+  footer i:hover {
+    color: #000000;
+    scale: 1;
+  }
+  footer a:visited,
+  footer i:visited,
+  footer li:visited {
+    color: #000000;
+    scale: 1;
+  }
+  footer a:active,
+  footer i:active,
+  footer li:active {
+    color: #000000;
+    scale: 1;
+  }
+}
 main {
   height: 500px;
   width: 100%;

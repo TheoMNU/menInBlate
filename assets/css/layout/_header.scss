@@ -3,7 +3,7 @@
 header {
     display: flex;
     height: 100px;
-    background-color: $color3;
+    background-color: $color2;
     padding: 5px 10px;
 
     .header-container {
@@ -13,6 +13,7 @@ header {
 
     .logo {
         width: 20%;
+        color: $color4;
         p {
             display: none;
         }
@@ -32,10 +33,12 @@ header {
     a {
         font-size: 2.5rem;
         text-transform: uppercase;
+        color: $color4;
     }
     .header-right p {
         font-size: 0.8rem;
         font-style: italic;
+        color: $color4;
     }
 }
 
@@ -70,6 +73,7 @@ header {
             }
             p {
                 justify-content: center;
+                color: $color4;
             }
         }
     }

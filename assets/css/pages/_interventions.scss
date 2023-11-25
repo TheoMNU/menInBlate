@@ -1,0 +1,56 @@
+@import '../settings';
+
+main {
+    background-color: $color3;
+
+    article {
+        margin: 0 auto;
+        text-align: center;
+        width: 80%;
+        padding: 20px 0;
+    }
+
+    // ---------------------------------------- Section
+    section {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        background-color: $color4;
+        width: 100%;
+        padding: 0 20px;
+
+        div {
+            margin: 30px 0;
+            img {
+                width: 75px;
+                height: 75px;
+            }
+            h3 {
+                margin: 10px;
+            }
+            h5 {
+                margin: 10px 0 5px 0;
+                font-size: 1.3rem;
+            }
+            p {
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+
+//--------------------------- reponsive
+
+@media screen and (min-width: 768px) {
+    main {
+        section {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            div {
+                padding: 15px;
+            }
+        }
+    }
+}

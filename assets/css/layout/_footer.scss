@@ -1,8 +1,6 @@
 @import '../settings.scss';
 
 /* ------------------------------------------- Footer ------------------------------------------- */
-/* ------------------------------------------- Footer ------------------------------------------- */
-/* ------------------------------------------- Footer ------------------------------------------- */
 footer {
     background-color: $color3;
     display: flex;
@@ -15,78 +13,60 @@ footer {
     li {
         padding: 5px;
     }
-    /* -------------------- Left-Container -------------------- */
-    .left-container {
-        width: 33%;
-        .left-part {
-            background-color: $color3;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            ul {
-                display: flex;
-                align-items: center;
-                padding: 10px 0 20px 0;
-                i {
-                    font-size: 2rem;
-                }
-            }
-        }
-    }
-    /* -------------------- Right-Container -------------------- */
-    .right-container {
-        display: flex;
-        justify-content: space-evenly;
-        width: 67%;
-        .center-part {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            ul {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-        }
-        .right-part {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            ul {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-    }
-    /* -------------------- Footer animation-------------------- */
-
-    li a:hover {
-        color: $color1;
-        transition: ease-in-out 0.2s;
-        scale: 1.2;
-    }
     i:hover,
+    a:hover,
     li:hover {
-        color: $color1;
         transition: ease-in-out 0.2s;
         scale: 1.2;
+        color: $color1;
     }
-    a:visited,
-    i:visited,
-    li:visited {
-        color: $color2;
-        scale: 1;
+}
+/* -------------------- Left-Container -------------------- */
+.left-container {
+    width: 33%;
+    .left-part {
+        background-color: $color3;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        ul {
+            display: flex;
+            align-items: center;
+            padding: 10px 0 20px 0;
+            i {
+                font-size: 2rem;
+            }
+        }
     }
-    a:active,
-    i:active,
-    li:active {
-        color: $color2;
-        scale: 1;
+}
+/* -------------------- Right-Container -------------------- */
+.right-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 67%;
+    .center-part {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .right-part {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 }
 
@@ -100,26 +80,13 @@ footer {
         align-items: center;
         font-size: 0.8rem;
 
-        .right-container {
-            width: 100%;
-        }
-        a:hover,
         li:hover,
         i:hover {
-            color: $color2;
             scale: 1;
         }
-        a:visited,
-        i:visited,
-        li:visited {
-            color: $color2;
-            scale: 1;
-        }
-        a:active,
-        i:active,
-        li:active {
-            color: $color2;
-            scale: 1;
+
+        .right-container {
+            width: 100%;
         }
     }
 }

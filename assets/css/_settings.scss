@@ -8,8 +8,14 @@
     color: #000000;
 }
 
+body {
+    margin: 0 auto;
+    max-width: 1800px;
+}
+
 /* ------------------- Variable ----------------- */
 
 $color1: #fe0000;
 $color2: #000000;
 $color3: #727272;
+$color4: #dfdfdf;

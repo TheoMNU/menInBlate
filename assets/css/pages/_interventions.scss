@@ -1,41 +1,118 @@
 @import '../settings';
 
 main {
+    margin: 0 auto;
     background-color: $color3;
-
     article {
         margin: 0 auto;
         text-align: center;
-        width: 80%;
-        padding: 20px 0;
+        width: 100%;
+        padding: 50px 20px;
+        h2 {
+            padding-bottom: 50px;
+            font-size: 2rem;
+        }
+        h3 {
+            padding-bottom: 20px;
+        }
+        h4 {
+            padding: 10px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 400px 300px 300px 300px 400px;
+            .oppacity {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                background-color: rgba(255, 255, 255, 0.5);
+                border-radius: 20px;
+                backdrop-filter: blur(3px);
+                font-size: 1.2rem;
+            }
+            .picture {
+                border: solid 5px $color4;
+                border-radius: 25px;
+            }
+            .pic-one {
+                background: url('../../../assets/img/mouse.jpg') center/cover;
+            }
+            .pic-two {
+                background: url('../../../assets/img/larves.jpg') center/cover;
+            }
+            .pic-three {
+                background: url('../../../assets/img/ruche.jpg') center/cover;
+            }
+        }
+        .text {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            margin: 20px;
+        }
     }
 
-    // ---------------------------------------- Section
-    section {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        background-color: $color4;
-        width: 100%;
-        padding: 0 20px;
+    .table-container {
+        table {
+            font-size: 0.8rem;
+            padding-bottom: 20px;
+            margin: 0 auto;
+            th {
+                background-color: $color1;
+                padding: 20px 0;
+            }
+            td {
+                text-align: left;
+                padding: 10px 20px;
+            }
+            tr:nth-child(even) {
+                background-color: rgba(142, 212, 221, 0.7);
+            }
+            tr:nth-child(odd) {
+                background-color: $color4;
+            }
+            tr:hover {
+                opacity: 0.7;
+            }
+        }
+        i {
+            margin: 0 20px;
+        }
+    }
+}
 
-        div {
-            margin: 30px 0;
-            img {
-                width: 75px;
-                height: 75px;
-            }
-            h3 {
-                margin: 10px;
-            }
-            h5 {
-                margin: 10px 0 5px 0;
-                font-size: 1.3rem;
-            }
-            p {
-                font-size: 0.8rem;
-            }
+// ---------------------------------------- Section
+section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: $color4;
+    padding: 0 20px;
+
+    div {
+        margin: 30px 0;
+        width: 30%;
+        img {
+            width: 75px;
+            height: 75px;
+            margin: 10px;
+        }
+        h4 {
+            margin: 10px;
+        }
+        h5 {
+            margin: 10px 0 5px 0;
+            font-size: 1.3rem;
+        }
+        p {
+            font-size: 0.8rem;
         }
     }
 }
@@ -44,13 +121,63 @@ main {
 
 @media screen and (min-width: 768px) {
     main {
-        section {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            div {
-                padding: 15px;
+        article {
+            width: 80%;
+            padding: 50px 20px;
+            h1 {
+                padding-bottom: 75px;
             }
+            .grid-container {
+                letter-spacing: 2px;
+                display: grid;
+                grid-template-columns: 1fr 1fr 2fr 2fr 1fr 1fr;
+                grid-template-rows: 75px 75px 75px 50px 75px 50px 75px 75px 75px;
+                gap: 20px;
+                row-gap: 50px;
+                font-size: 1.2rem;
+                grid-template-areas:
+                    'a1 a1 b b b b'
+                    'a1 a1 b b b b'
+                    'a1 a1 b b b b'
+                    'c c c c c c'
+                    'c c c c c c'
+                    'c c c c c c'
+                    'd d d d e e'
+                    'd d d d e e'
+                    'd d d d e e';
+                .pic-one {
+                    grid-area: a1;
+                }
+                .pic-two {
+                    grid-area: c;
+                    width: 75%;
+                    margin: 0 auto;
+                }
+                .pic-three {
+                    grid-area: e;
+                }
+                .text {
+                    text-align: left;
+                }
+                .text-one {
+                    grid-area: b;
+                }
+                .text-two {
+                    grid-area: d;
+                }
+                .oppacity:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 300px;
+        div {
+            padding: 15px;
         }
     }
 }

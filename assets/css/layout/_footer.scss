@@ -23,7 +23,7 @@ footer {
 }
 /* -------------------- Left-Container -------------------- */
 .left-container {
-    width: 33%;
+    width: 36%;
     .left-part {
         background-color: $color3;
         display: flex;
@@ -43,8 +43,8 @@ footer {
 /* -------------------- Right-Container -------------------- */
 .right-container {
     display: flex;
-    justify-content: space-evenly;
-    width: 67%;
+    justify-content: space-around;
+    width: 64%;
     .center-part {
         display: flex;
         flex-direction: column;

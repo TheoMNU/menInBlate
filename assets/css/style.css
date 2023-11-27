@@ -519,8 +519,9 @@ section div p {
     width: 80%;
     padding: 50px 20px;
   }
-  main article h1 {
+  main article h2 {
     padding-bottom: 75px;
+    font-size: 3rem;
   }
   main article .grid-container {
     letter-spacing: 2px;
@@ -555,11 +556,25 @@ section div p {
   main article .grid-container .oppacity:hover {
     opacity: 1;
   }
+  main article .video {
+    font-size: 2rem;
+    height: 900px;
+  }
+  main article .video h3 {
+    margin-bottom: 50px;
+  }
+  main article .video video {
+    width: 100%;
+    height: 75%;
+    text-decoration: none;
+  }
   section {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    height: 300px;
+    align-items: center;
+    height: 400px;
+    font-size: 2rem;
   }
   section div {
     padding: 15px;

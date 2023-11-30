@@ -300,23 +300,20 @@ body {
 /* ------------------- Variable ----------------- */
 /* ------------------------------------------- Footer ------------------------------------------- */
 footer {
-  background-color: #727272;
+  background-color: #000000;
   display: flex;
   width: 100%;
   padding: 20px 0;
 }
 footer h4 {
   padding: 10px;
+  color: #727272;
 }
 footer li {
   padding: 5px;
 }
-footer i:hover,
-footer a:hover,
-footer li:hover {
-  transition: ease-in-out 0.2s;
-  scale: 1.2;
-  color: rgb(7, 19, 248);
+footer a {
+  color: #727272;
 }
 
 /* -------------------- Left-Container -------------------- */
@@ -324,7 +321,7 @@ footer li:hover {
   width: 36%;
 }
 .left-container .left-part {
-  background-color: #727272;
+  background-color: #000000;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -335,8 +332,18 @@ footer li:hover {
   align-items: center;
   padding: 10px 0 20px 0;
 }
+.left-container .left-part ul li {
+  color: #727272;
+}
 .left-container .left-part ul i {
   font-size: 2rem;
+  color: #727272;
+}
+.left-container .left-part ul li:hover,
+.left-container .left-part ul i:hover {
+  transition: ease-in-out 0.2s;
+  scale: 1.2;
+  color: rgb(7, 19, 248);
 }
 
 /* -------------------- Right-Container -------------------- */
@@ -344,6 +351,12 @@ footer li:hover {
   display: flex;
   justify-content: space-around;
   width: 64%;
+}
+.right-container li:hover,
+.right-container a:hover {
+  transition: ease-in-out 0.2s;
+  scale: 1.2;
+  color: rgb(7, 19, 248);
 }
 .right-container .center-part {
   display: flex;
@@ -405,28 +418,31 @@ main {
   margin: 0 auto;
   background-color: #727272;
 }
+main h2 {
+  font-size: 2rem;
+  padding-bottom: 50px;
+}
+main h3 {
+  font-size: 1.5rem;
+}
+main h4 {
+  padding: 10px;
+}
+main p {
+  font-size: 1.2rem;
+}
 main article {
   margin: 0 auto;
   text-align: center;
   width: 100%;
   padding: 50px 20px;
 }
-main article h2 {
-  padding-bottom: 50px;
-  font-size: 2rem;
-}
-main article h3 {
-  padding-bottom: 20px;
-}
-main article h4 {
-  padding: 10px;
-}
-main article .grid-container {
+main article .intervention-container .grid-container {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 400px 300px 300px 300px 400px;
 }
-main article .grid-container .oppacity {
+main article .intervention-container .grid-container .oppacity {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -440,25 +456,28 @@ main article .grid-container .oppacity {
           backdrop-filter: blur(3px);
   font-size: 1.2rem;
 }
-main article .grid-container .picture {
+main article .intervention-container .grid-container .picture {
   border: solid 5px #dfdfdf;
   border-radius: 25px;
 }
-main article .grid-container .pic-one {
+main article .intervention-container .grid-container .pic-one {
   background: url("../../../assets/img/mouse.jpg") center/cover;
 }
-main article .grid-container .pic-two {
+main article .intervention-container .grid-container .pic-two {
   background: url("../../../assets/img/larves.jpg") center/cover;
 }
-main article .grid-container .pic-three {
+main article .intervention-container .grid-container .pic-three {
   background: url("../../../assets/img/ruche.jpg") center/cover;
 }
-main article .text {
+main article .intervention-container .text {
   display: flex;
   justify-content: center;
   text-align: center;
   align-items: center;
   margin: 20px;
+}
+main .table-container h3 {
+  margin-bottom: 50px;
 }
 main .table-container table {
   font-size: 0.8rem;
@@ -494,6 +513,18 @@ section {
   background-color: #dfdfdf;
   padding: 0 20px;
 }
+section .client-quality {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+section .client-rattings {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
 section div {
   margin: 30px 0;
   width: 30%;
@@ -510,20 +541,19 @@ section div h5 {
   margin: 10px 0 5px 0;
   font-size: 1.3rem;
 }
-section div p {
+section div q {
   font-size: 0.8rem;
 }
 
 @media screen and (min-width: 768px) {
   main article {
     width: 80%;
-    padding: 50px 20px;
+    padding: 0 20px 50px 0;
   }
   main article h2 {
-    padding-bottom: 75px;
     font-size: 3rem;
   }
-  main article .grid-container {
+  main article .intervention-container .grid-container {
     letter-spacing: 2px;
     display: grid;
     grid-template-columns: 1fr 1fr 2fr 2fr 1fr 1fr;
@@ -533,50 +563,198 @@ section div p {
     font-size: 1.2rem;
     grid-template-areas: "a1 a1 b b b b" "a1 a1 b b b b" "a1 a1 b b b b" "c c c c c c" "c c c c c c" "c c c c c c" "d d d d e e" "d d d d e e" "d d d d e e";
   }
-  main article .grid-container .pic-one {
+  main article .intervention-container .grid-container .pic-one {
     grid-area: a1;
   }
-  main article .grid-container .pic-two {
+  main article .intervention-container .grid-container .pic-two {
     grid-area: c;
     width: 75%;
     margin: 0 auto;
   }
-  main article .grid-container .pic-three {
+  main article .intervention-container .grid-container .pic-three {
     grid-area: e;
   }
-  main article .grid-container .text {
+  main article .intervention-container .grid-container .text {
     text-align: left;
   }
-  main article .grid-container .text-one {
+  main article .intervention-container .grid-container .text-one {
     grid-area: b;
   }
-  main article .grid-container .text-two {
+  main article .intervention-container .grid-container .text-one small {
+    font-style: italic;
+  }
+  main article .intervention-container .grid-container .text-two {
     grid-area: d;
   }
-  main article .grid-container .oppacity:hover {
+  main article .intervention-container .grid-container .oppacity:hover {
     opacity: 1;
   }
-  main article .video {
+  main article h3 {
+    margin: 50px 0;
+  }
+  main article figure {
     font-size: 2rem;
     height: 900px;
   }
-  main article .video h3 {
-    margin-bottom: 50px;
-  }
-  main article .video video {
+  main article figure video {
     width: 100%;
     height: 75%;
     text-decoration: none;
   }
-  section {
+  section .client-quality {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
-    height: 400px;
+    align-items: start;
+    width: 100%;
+    font-size: 2rem;
+  }
+  section .client-rattings {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: start;
     font-size: 2rem;
   }
   section div {
     padding: 15px;
   }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "lexend", sans-serif;
+  text-decoration: none;
+  color: #000000;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1800px;
+}
+
+/* ------------------- Variable ----------------- */
+article hr {
+  margin: 5px auto;
+  width: 50%;
+  height: 5px;
+  background-color: #000000;
+  border: #000000;
+}
+
+section .prestation-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+section .prestation-card .card {
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(7, 19, 248);
+  margin: 20px auto;
+  padding: 20px 10px;
+  border-radius: 10px;
+}
+section .prestation-card .card .product-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+}
+section .prestation-card .card .product-description img {
+  height: 100px;
+  width: 100px;
+  border-radius: 5px;
+}
+section .prestation-card .card .product-description h3 {
+  font-size: 0.9rem;
+}
+section .prestation-card .card .product-description p {
+  margin: 20px 0;
+  font-size: 0.9rem;
+}
+section .prestation-card .card .product-price {
+  width: 100%;
+  background-color: #727272;
+  width: 75%;
+  padding: 5px;
+  border-radius: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  section .prestation-card .card {
+    width: 350px;
+    margin: 10px auto;
+  }
+  section .prestation-card .card .product-description {
+    height: 100%;
+  }
+  section .prestation-card .card .product-description img {
+    width: 90%;
+    height: 50%;
+  }
+  section .prestation-card .card .product-description h3 {
+    font-size: 1.5rem;
+  }
+  section .prestation-card .card .product-description p {
+    font-size: 1.2rem;
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "lexend", sans-serif;
+  text-decoration: none;
+  color: #000000;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1800px;
+}
+
+/* ------------------- Variable ----------------- */
+main h2 {
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 50px;
+}
+main .history-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+main .history-container .history-content {
+  width: 60%;
+}
+main .history-container .history-content figure {
+  display: inline;
+  float: right;
+  text-align: center;
+  width: 40%;
+  margin: 20px;
+}
+main .history-container .history-content figure img {
+  width: 100%;
+}
+main .history-container aside {
+  background-color: red;
+  width: 30%;
+  padding: 10px;
+}
+main .rest {
+  margin: 0 auto;
+  overflow: auto;
+  height: 200px;
+  width: 90%;
 }/*# sourceMappingURL=style.css.map */

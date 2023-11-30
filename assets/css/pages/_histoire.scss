@@ -1,0 +1,39 @@
+@import '../settings';
+
+main {
+    h2 {
+        text-align: center;
+        font-size: 3rem;
+        padding-top: 50px;
+    }
+    .history-container {
+        display: flex;
+        justify-content: space-around;
+
+        padding: 50px;
+        .history-content {
+            width: 60%;
+            figure {
+                display: inline;
+                float: right;
+                text-align: center;
+                width: 40%;
+                margin: 20px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        aside {
+            background-color: red;
+            width: 30%;
+            padding: 10px;
+        }
+    }
+    .rest {
+        margin: 0 auto;
+        overflow: auto;
+        height: 200px;
+        width: 90%;
+    }
+}

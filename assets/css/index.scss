@@ -27,7 +27,7 @@ main {
         border: solid 2px white;
         border-radius: 999px;
         background-color: transparent;
-        margin: 70vh 6px 0 6px;
+        margin: 70vh 0 0 -32px;
         cursor: pointer;
         transition-duration: 0.4s;
         box-shadow: 0 0 20px 0 #000;
@@ -43,13 +43,16 @@ main {
     }
 
     input {
+        position: relative;
+        margin: 0 16px;
+        z-index: 100;
         opacity: 0;
         margin-top: 70vh;
         cursor: pointer;
     }
 
     input:checked + label {
-        background-color: white;
+        background-color: $color1;
     }
 
     input + label::after {
@@ -61,7 +64,6 @@ main {
         line-height: 100vh;
         transition: background-size 200ms;
         position: absolute;
-        color: white;
         height: 75vh;
         width: 80px;
         top: 25vh;
@@ -93,7 +95,7 @@ main {
     }
 
     input:focus + label {
-        box-shadow: 0 0 0 2px teal, 0 0 18px white;
+        box-shadow: 0 0 0 2px rgb(253, 4, 4) 0 18px rgb(255, 0, 0);
     }
     input:checked ~ .slide {
         transform: translateX(100%);
@@ -136,6 +138,8 @@ main {
     }
 }
 
+// ------------------------------------------ Responsive ---------------------------------------
+
 @media screen and (max-width: 768px) {
     header {
         height: 15vh;
@@ -164,10 +168,11 @@ main {
         text-align: center;
         height: 79vh;
         label {
-            margin: 74vh 6px 0 6px;
+            margin: 74vh 0 0 -32px;
 
             input {
                 margin-top: 74vh;
+                margin: 0 16px;
             }
 
             input + label::after {

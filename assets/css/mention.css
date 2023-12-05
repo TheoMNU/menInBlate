@@ -126,6 +126,7 @@ main .container .rgpd details:hover {
 }
 main .container .cgv ol {
   margin-left: 80px;
+  padding-right: 50px;
 }
 main .container .cgv ol li {
   font-weight: bold;

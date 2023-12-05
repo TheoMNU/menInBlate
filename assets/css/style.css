@@ -204,10 +204,12 @@ nav::after {
     align-items: center;
     justify-content: center;
     position: relative;
+    margin-top: 9px;
   }
   nav .hamburger .btn-nav {
     position: absolute;
-    left: 20px;
+    left: 10px;
+    align-content: center;
     font-size: 1.5rem;
     cursor: pointer;
   }
@@ -219,7 +221,7 @@ nav::after {
     background-color: white;
     width: 100%;
     left: -1000px;
-    transform: translateY(19px);
+    z-index: 50;
   }
   nav .nav-bar.active-navBar {
     display: flex;

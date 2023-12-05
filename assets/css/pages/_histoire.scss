@@ -1,39 +1,99 @@
 @import '../settings';
 
 main {
-    h2 {
+    .history {
+        margin: 0 auto;
         text-align: center;
-        font-size: 3rem;
-        padding-top: 50px;
-    }
-    .history-container {
-        display: flex;
-        justify-content: space-around;
-
         padding: 50px;
-        .history-content {
-            width: 60%;
-            figure {
-                display: inline;
-                float: right;
-                text-align: center;
-                width: 40%;
-                margin: 20px;
-                img {
+        .history-container {
+            .history-content {
+                figure {
+                    margin: 50px 0;
+                    img {
+                        width: 100%;
+                    }
+                }
+                blockquote {
+                    margin: 50px 0;
+                }
+                code {
+                    display: flex;
+                    text-align: left;
+                    justify-content: center;
                     width: 100%;
+                    margin: 20px 0;
+                }
+            }
+            aside {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                justify-content: space-around;
+                padding: 10px;
+                margin: 20px;
+                border-radius: 10px;
+                box-shadow: 0px 0px 32px -6px #000000;
+                height: 500px;
+                h3 {
+                    font-size: 1rem;
+                }
+                span {
+                    content: '';
+                    width: 2px;
+                    background-color: black;
+                    flex-grow: 1;
                 }
             }
         }
-        aside {
-            background-color: red;
-            width: 30%;
-            padding: 10px;
+        .rest {
+            display: none;
         }
     }
-    .rest {
-        margin: 0 auto;
-        overflow: auto;
-        height: 200px;
-        width: 90%;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        .history {
+            padding-bottom: 50px;
+            h2 {
+                text-align: center;
+                font-size: 3rem;
+            }
+            .history-container {
+                display: flex;
+                justify-content: space-around;
+                text-align: left;
+
+                padding: 50px;
+                .history-content {
+                    width: 80%;
+                    margin: 0 10px;
+                    figure {
+                        display: inline;
+                        float: left;
+                        text-align: center;
+                        width: 40%;
+                        margin: 20px;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    blockquote {
+                        margin: 10px;
+                    }
+                    aside {
+                        float: right;
+                    }
+                }
+            }
+            .rest {
+                display: block;
+                overflow: scroll;
+                overflow-x: hidden;
+                height: 200px;
+                width: 90%;
+            }
+        }
     }
 }

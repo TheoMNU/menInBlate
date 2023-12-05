@@ -12,6 +12,7 @@ main {
     }
     h4 {
         padding: 10px;
+        font-size: 1.5rem;
     }
     p {
         font-size: 1.2rem;
@@ -26,7 +27,7 @@ main {
             .grid-container {
                 display: grid;
                 grid-template-columns: 1fr;
-                grid-template-rows: 400px 300px 300px 300px 400px;
+                grid-template-rows: 400px auto 300px auto 400px;
                 .oppacity {
                     height: 100%;
                     display: flex;
@@ -56,13 +57,13 @@ main {
                     background: url('../../../assets/img/ruche.jpg')
                         center/cover;
                 }
-            }
-            .text {
-                display: flex;
-                justify-content: center;
-                text-align: center;
-                align-items: center;
-                margin: 20px;
+                .text {
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    align-items: center;
+                    margin: 20px;
+                }
             }
         }
     }
@@ -112,6 +113,7 @@ section {
         flex-direction: column;
         width: 100%;
         align-items: center;
+        text-align: center;
     }
     .client-rattings {
         display: flex;
@@ -122,7 +124,6 @@ section {
 
     div {
         margin: 30px 0;
-        width: 30%;
         img {
             width: 75px;
             height: 75px;
@@ -147,7 +148,7 @@ section {
     main {
         article {
             width: 80%;
-            padding: 0 20px 50px 0;
+            padding: 50px 20px 50px 0;
 
             h2 {
                 font-size: 3rem;
@@ -219,10 +220,17 @@ section {
         .client-quality {
             display: flex;
             flex-direction: row;
-            justify-content: space-evenly;
+            justify-content: center;
             align-items: start;
-            width: 100%;
             font-size: 2rem;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 30%;
+                padding: 10px;
+            }
         }
         .client-rattings {
             display: flex;
@@ -231,9 +239,9 @@ section {
             justify-content: space-evenly;
             align-items: start;
             font-size: 2rem;
-        }
-        div {
-            padding: 15px;
+            div {
+                padding: 15px;
+            }
         }
     }
 }

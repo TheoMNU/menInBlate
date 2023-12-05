@@ -10,7 +10,7 @@
 
 body {
   margin: 0 auto;
-  max-width: 1800px;
+  max-width: 2100px;
 }
 
 /* ------------------- Variable ----------------- */
@@ -26,7 +26,7 @@ body {
 
 body {
   margin: 0 auto;
-  max-width: 1800px;
+  max-width: 2100px;
 }
 
 /* ------------------- Variable ----------------- */
@@ -113,7 +113,7 @@ header .header-right p {
 
 body {
   margin: 0 auto;
-  max-width: 1800px;
+  max-width: 2100px;
 }
 
 /* ------------------- Variable ----------------- */
@@ -294,7 +294,7 @@ nav::after {
 
 body {
   margin: 0 auto;
-  max-width: 1800px;
+  max-width: 2100px;
 }
 
 /* ------------------- Variable ----------------- */
@@ -410,7 +410,7 @@ footer a {
 
 body {
   margin: 0 auto;
-  max-width: 1800px;
+  max-width: 2100px;
 }
 
 /* ------------------- Variable ----------------- */
@@ -427,6 +427,7 @@ main h3 {
 }
 main h4 {
   padding: 10px;
+  font-size: 1.5rem;
 }
 main p {
   font-size: 1.2rem;
@@ -440,7 +441,7 @@ main article {
 main article .intervention-container .grid-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 400px 300px 300px 300px 400px;
+  grid-template-rows: 400px auto 300px auto 400px;
 }
 main article .intervention-container .grid-container .oppacity {
   height: 100%;
@@ -469,7 +470,7 @@ main article .intervention-container .grid-container .pic-two {
 main article .intervention-container .grid-container .pic-three {
   background: url("../../../assets/img/ruche.jpg") center/cover;
 }
-main article .intervention-container .text {
+main article .intervention-container .grid-container .text {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -518,6 +519,7 @@ section .client-quality {
   flex-direction: column;
   width: 100%;
   align-items: center;
+  text-align: center;
 }
 section .client-rattings {
   display: flex;
@@ -527,7 +529,6 @@ section .client-rattings {
 }
 section div {
   margin: 30px 0;
-  width: 30%;
 }
 section div img {
   width: 75px;
@@ -548,7 +549,7 @@ section div q {
 @media screen and (min-width: 768px) {
   main article {
     width: 80%;
-    padding: 0 20px 50px 0;
+    padding: 50px 20px 50px 0;
   }
   main article h2 {
     font-size: 3rem;
@@ -604,10 +605,16 @@ section div q {
   section .client-quality {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: start;
-    width: 100%;
     font-size: 2rem;
+  }
+  section .client-quality div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    padding: 10px;
   }
   section .client-rattings {
     display: flex;
@@ -617,7 +624,7 @@ section div q {
     align-items: start;
     font-size: 2rem;
   }
-  section div {
+  section .client-rattings div {
     padding: 15px;
   }
 }
@@ -633,7 +640,7 @@ section div q {
 
 body {
   margin: 0 auto;
-  max-width: 1800px;
+  max-width: 2100px;
 }
 
 /* ------------------- Variable ----------------- */
@@ -647,7 +654,7 @@ article hr {
 
 section .prestation-card {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: center;
   width: 100%;
 }
@@ -720,41 +727,95 @@ section .prestation-card .card .product-price {
 
 body {
   margin: 0 auto;
-  max-width: 1800px;
+  max-width: 2100px;
 }
 
 /* ------------------- Variable ----------------- */
-main h2 {
+main .history {
+  margin: 0 auto;
   text-align: center;
-  font-size: 3rem;
-  padding-top: 50px;
-}
-main .history-container {
-  display: flex;
-  justify-content: space-around;
   padding: 50px;
 }
-main .history-container .history-content {
-  width: 60%;
+main .history .history-container .history-content figure {
+  margin: 50px 0;
 }
-main .history-container .history-content figure {
-  display: inline;
-  float: right;
-  text-align: center;
-  width: 40%;
-  margin: 20px;
-}
-main .history-container .history-content figure img {
+main .history .history-container .history-content figure img {
   width: 100%;
 }
-main .history-container aside {
-  background-color: red;
-  width: 30%;
-  padding: 10px;
+main .history .history-container .history-content blockquote {
+  margin: 50px 0;
 }
-main .rest {
-  margin: 0 auto;
-  overflow: auto;
-  height: 200px;
-  width: 90%;
+main .history .history-container .history-content code {
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  width: 100%;
+  margin: 20px 0;
+}
+main .history .history-container aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 32px -6px #000000;
+  height: 500px;
+}
+main .history .history-container aside h3 {
+  font-size: 1rem;
+}
+main .history .history-container aside span {
+  content: "";
+  width: 2px;
+  background-color: black;
+  flex-grow: 1;
+}
+main .history .rest {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  main .history {
+    padding-bottom: 50px;
+  }
+  main .history h2 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  main .history .history-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    padding: 50px;
+  }
+  main .history .history-container .history-content {
+    width: 80%;
+    margin: 0 10px;
+  }
+  main .history .history-container .history-content figure {
+    display: inline;
+    float: left;
+    text-align: center;
+    width: 40%;
+    margin: 20px;
+  }
+  main .history .history-container .history-content figure img {
+    width: 100%;
+  }
+  main .history .history-container .history-content blockquote {
+    margin: 10px;
+  }
+  main .history .history-container .history-content aside {
+    float: right;
+  }
+  main .history .rest {
+    display: block;
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 200px;
+    width: 90%;
+  }
 }/*# sourceMappingURL=style.css.map */

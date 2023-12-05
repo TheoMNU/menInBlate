@@ -13,9 +13,10 @@ article {
 section {
     .prestation-card {
         display: flex;
-        flex-wrap: wrap;
+        flex-flow: row wrap;
         justify-content: center;
         width: 100%;
+
         .card {
             width: 120px;
             display: flex;
@@ -46,6 +47,7 @@ section {
                     font-size: 0.9rem;
                 }
             }
+
             .product-price {
                 width: 100%;
                 background-color: $color3;

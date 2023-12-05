@@ -820,4 +820,97 @@ main .history .rest {
     height: 200px;
     width: 90%;
   }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "lexend", sans-serif;
+  text-decoration: none;
+  color: #000000;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 2100px;
+}
+
+/* ------------------- Variable ----------------- */
+main .title h2 {
+  padding-top: 50px;
+  font-size: 3rem;
+  text-align: center;
+}
+main form {
+  text-align: center;
+  padding-bottom: 50px;
+  width: 60%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 2fr 2fr 2fr 3fr 1fr 2fr;
+  grid-template-areas: "a a" "b c" "d e" "f f" "g g" "h h" "i i";
+}
+main form div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main form div input {
+  width: 90%;
+  margin: 10px;
+  padding: 10px 0;
+  border-radius: 10px;
+  border: none;
+}
+main form div select,
+main form div textarea {
+  width: 95%;
+  margin: 10px;
+  padding: 10px 0;
+  border-radius: 10px;
+}
+main form div label {
+  font-size: 1.5rem;
+}
+main form .sex {
+  flex-direction: row;
+  justify-content: center;
+  grid-area: a;
+}
+main form .sex .men,
+main form .sex .women {
+  display: flex;
+  flex-direction: row;
+  margin: 0 20px;
+}
+main form .last-name {
+  grid-area: b;
+}
+main form .first-name {
+  grid-area: c;
+}
+main form .email {
+  grid-area: d;
+}
+main form .phone-number {
+  grid-area: e;
+}
+main form .choice {
+  grid-area: f;
+}
+main form .message {
+  grid-area: g;
+}
+main form .cgv {
+  grid-area: h;
+}
+main form .button {
+  grid-area: i;
+}
+main form .button input {
+  width: 30%;
+  font-size: 1.5rem;
 }/*# sourceMappingURL=style.css.map */

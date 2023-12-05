@@ -409,16 +409,16 @@ header {
 }
 
 nav {
-  height: 5vh;
+  height: 4vh;
   margin-bottom: 0;
 }
 nav::after {
-  top: 5vh;
+  top: 4vh;
 }
 
 main {
   text-align: center;
-  height: 75vh;
+  height: 76vh;
 }
 main label {
   display: inline-block;
@@ -436,10 +436,7 @@ main label {
 main label .sr-only {
   position: absolute;
   pointer-events: none;
-  width: 1px;
-  height: 1px;
-  color: transparent;
-  z-index: 50;
+  z-index: 60;
 }
 main input {
   position: relative;
@@ -461,7 +458,7 @@ main input + label::after {
   line-height: 100vh;
   transition: background-size 200ms;
   position: absolute;
-  height: 75vh;
+  height: 76vh;
   width: 80px;
   top: 25vh;
   left: 0;
@@ -502,13 +499,18 @@ main .slide {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 75vh;
-  top: 25vh;
+  height: 76vh;
+  top: 24vh;
   left: 0;
   z-index: -1;
   transform: translateX(-100%);
   transition-duration: 0.4s;
   opacity: 1;
+}
+main .slide p {
+  font-size: 3rem;
+  padding: 15vh 100px;
+  align-content: center;
 }
 main .bg1 {
   background-image: url(https://images.unsplash.com/photo-1422806310414-91469fe4977e?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=114e7a73b2385128045a5555b981e939);
@@ -567,5 +569,8 @@ main .bg5 {
   main .slide {
     height: 79vh;
     top: 21vh;
+  }
+  main .slide p {
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=index.css.map */

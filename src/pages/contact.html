@@ -56,7 +56,101 @@
                 </ul>
             </div>
         </nav>
-        <main></main>
+        <main>
+            <div class="title">
+                <h2>Contactez-nous !</h2>
+            </div>
+            <form
+                action="https://bio-nature.org/greta/formulaire.php"
+                method="post"
+            >
+                <div class="sex">
+                    <div class="women">
+                        <label for="women">Madame</label>
+                        <input
+                            type="radio"
+                            id="women"
+                            name="civilite"
+                            checked
+                        />
+                    </div>
+                    <div class="men">
+                        <label for="men">Monsieur</label>
+                        <input type="radio" id="men" name="civilite" />
+                    </div>
+                </div>
+                <div class="last-name">
+                    <label for="lastName">Votre nom : </label>
+                    <input
+                        type="text"
+                        name="nom"
+                        id="lastName"
+                        placeholder=" Votre Nom"
+                    />
+                </div>
+                <div class="first-name">
+                    <label for="firstName">Votre prénom : </label>
+                    <input
+                        type="text"
+                        name="prénom"
+                        id="firstName"
+                        placeholder=" Votre prénom"
+                    />
+                </div>
+                <div class="email">
+                    <label for="mail">Entrez votre adresse mail :</label>
+                    <input
+                        type="email"
+                        id="mail"
+                        placeholder=" Entrez votre adresse mail"
+                        required
+                    />
+                </div>
+                <div class="phone-number">
+                    <label for="phoneNumber">Votre numéro de téléphone :</label>
+                    <input
+                        type="tel"
+                        id="phoneNumber"
+                        pattern="[0-9]{10}"
+                        placeholder=" XX-XX-XX-XX-XX"
+                        required
+                    />
+                </div>
+                <div class="choice">
+                    <label for="check">Prestation voulu</label>
+                    <select name="value" id="check">
+                        <option value="" selected>Dératisation</option>
+                        <option value="">Désinfection</option>
+                        <option value="">Nettoyage</option>
+                        <option value="">Traitement de bois</option>
+                        <option value="">Autres</option>
+                    </select>
+                </div>
+                <div class="message">
+                    <label for="commentaire">Message</label>
+                    <textarea
+                        name="commentaire"
+                        id="commentaire"
+                        cols="30"
+                        rows="10"
+                        style="resize: none"
+                        placeholder=" Entrez votre message"
+                    ></textarea>
+                </div>
+                <div class="cgv">
+                    <label for="cgv">
+                        Accepter les CGV<input
+                            type="checkbox"
+                            name="cgv"
+                            id="cgv"
+                            required
+                    /></label>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Envoyer" />
+                </div>
+            </form>
+        </main>
         <footer>
             <div class="left-container">
                 <div class="left-part">

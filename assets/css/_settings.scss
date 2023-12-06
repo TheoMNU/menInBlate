@@ -12,10 +12,15 @@ body {
     margin: 0 auto;
     max-width: 2100px;
 }
+@mixin box-shadow-black {
+    box-shadow: 0px 5px 117px 45px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 5px 117px 45px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 5px 117px 45px rgba(0, 0, 0, 0.5);
+}
 
 /* ------------------- Variable ----------------- */
 
-$color1: rgb(7, 19, 248);
-$color2: #000000;
+$color1: #00b7d9;
+$color2: #1c1c1c;
 $color3: #727272;
 $color4: #dfdfdf;

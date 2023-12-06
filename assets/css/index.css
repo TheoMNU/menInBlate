@@ -33,7 +33,7 @@ body {
 header {
   display: flex;
   height: 150px;
-  background-color: #000000;
+  background: linear-gradient(36deg, rgb(255, 255, 255) 0%, rgb(88, 88, 88) 0%, rgb(187, 187, 187) 16%, rgb(37, 37, 37) 62%, rgb(0, 0, 0) 82%);
   padding: 5px 10px;
 }
 header .header-container {
@@ -139,34 +139,34 @@ nav li {
   position: relative;
 }
 nav .active a {
-  color: rgb(7, 19, 248);
+  color: #00b7d9;
 }
 nav .active::before {
-  color: rgb(7, 19, 248);
+  color: #00b7d9;
   content: "";
   width: 100%;
   height: 5px;
   position: absolute;
-  background-color: rgb(7, 19, 248);
+  background-color: #00b7d9;
   top: -5px;
   left: -1px;
 }
 nav li:hover {
-  border-top: solid 5px rgb(7, 19, 248);
+  border-top: solid 5px #00b7d9;
   padding: 2px 50px;
   transition: ease 0.3s;
 }
 nav a:hover {
   scale: 1.2;
   transition: ease 0.5s;
-  color: rgb(7, 19, 248);
+  color: #00b7d9;
 }
 nav::after {
   content: "";
   position: absolute;
   width: 90%;
   height: 2px;
-  background-color: rgb(7, 19, 248);
+  background-color: #00b7d9;
   opacity: 0.3;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -237,7 +237,7 @@ nav::after {
     margin: 0;
   }
   nav .nav-bar.active-navBar .active a {
-    color: rgb(7, 19, 248);
+    color: #00b7d9;
   }
   nav .nav-bar.active-navBar li:hover {
     border-top: none;
@@ -267,7 +267,7 @@ nav::after {
     margin: 0;
   }
   nav .nav-bar.desactive-navBar .active a {
-    color: rgb(7, 19, 248);
+    color: #00b7d9;
   }
   nav .nav-bar.desactive-navBar li:hover {
     border-top: none;
@@ -302,14 +302,14 @@ body {
 /* ------------------- Variable ----------------- */
 /* ------------------------------------------- Footer ------------------------------------------- */
 footer {
-  background-color: #000000;
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(40, 40, 40) 63%, rgb(75, 75, 75) 90%);
   display: flex;
   width: 100%;
   padding: 20px 0;
 }
 footer h4 {
   padding: 10px;
-  color: #727272;
+  color: #00b7d9;
 }
 footer li {
   padding: 5px;
@@ -323,7 +323,6 @@ footer a {
   width: 36%;
 }
 .left-container .left-part {
-  background-color: #000000;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -345,7 +344,7 @@ footer a {
 .left-container .left-part ul i:hover {
   transition: ease-in-out 0.2s;
   scale: 1.2;
-  color: rgb(7, 19, 248);
+  color: #00b7d9;
 }
 
 /* -------------------- Right-Container -------------------- */
@@ -358,7 +357,7 @@ footer a {
 .right-container a:hover {
   transition: ease-in-out 0.2s;
   scale: 1.2;
-  color: rgb(7, 19, 248);
+  color: #00b7d9;
 }
 .right-container .center-part {
   display: flex;
@@ -447,7 +446,7 @@ main input {
   cursor: pointer;
 }
 main input:checked + label {
-  background-color: rgb(7, 19, 248);
+  background-color: #00b7d9;
 }
 main input + label::after {
   content: "";

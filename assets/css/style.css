@@ -33,7 +33,7 @@ body {
 header {
   display: flex;
   height: 150px;
-  background-color: #000000;
+  background: linear-gradient(36deg, rgb(255, 255, 255) 0%, rgb(88, 88, 88) 0%, rgb(187, 187, 187) 16%, rgb(37, 37, 37) 62%, rgb(0, 0, 0) 82%);
   padding: 5px 10px;
 }
 header .header-container {
@@ -139,34 +139,34 @@ nav li {
   position: relative;
 }
 nav .active a {
-  color: rgb(7, 19, 248);
+  color: #00b7d9;
 }
 nav .active::before {
-  color: rgb(7, 19, 248);
+  color: #00b7d9;
   content: "";
   width: 100%;
   height: 5px;
   position: absolute;
-  background-color: rgb(7, 19, 248);
+  background-color: #00b7d9;
   top: -5px;
   left: -1px;
 }
 nav li:hover {
-  border-top: solid 5px rgb(7, 19, 248);
+  border-top: solid 5px #00b7d9;
   padding: 2px 50px;
   transition: ease 0.3s;
 }
 nav a:hover {
   scale: 1.2;
   transition: ease 0.5s;
-  color: rgb(7, 19, 248);
+  color: #00b7d9;
 }
 nav::after {
   content: "";
   position: absolute;
   width: 90%;
   height: 2px;
-  background-color: rgb(7, 19, 248);
+  background-color: #00b7d9;
   opacity: 0.3;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -237,7 +237,7 @@ nav::after {
     margin: 0;
   }
   nav .nav-bar.active-navBar .active a {
-    color: rgb(7, 19, 248);
+    color: #00b7d9;
   }
   nav .nav-bar.active-navBar li:hover {
     border-top: none;
@@ -267,7 +267,7 @@ nav::after {
     margin: 0;
   }
   nav .nav-bar.desactive-navBar .active a {
-    color: rgb(7, 19, 248);
+    color: #00b7d9;
   }
   nav .nav-bar.desactive-navBar li:hover {
     border-top: none;
@@ -302,14 +302,14 @@ body {
 /* ------------------- Variable ----------------- */
 /* ------------------------------------------- Footer ------------------------------------------- */
 footer {
-  background-color: #000000;
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(40, 40, 40) 63%, rgb(75, 75, 75) 90%);
   display: flex;
   width: 100%;
   padding: 20px 0;
 }
 footer h4 {
   padding: 10px;
-  color: #727272;
+  color: #00b7d9;
 }
 footer li {
   padding: 5px;
@@ -323,7 +323,6 @@ footer a {
   width: 36%;
 }
 .left-container .left-part {
-  background-color: #000000;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -345,7 +344,7 @@ footer a {
 .left-container .left-part ul i:hover {
   transition: ease-in-out 0.2s;
   scale: 1.2;
-  color: rgb(7, 19, 248);
+  color: #00b7d9;
 }
 
 /* -------------------- Right-Container -------------------- */
@@ -358,7 +357,7 @@ footer a {
 .right-container a:hover {
   transition: ease-in-out 0.2s;
   scale: 1.2;
-  color: rgb(7, 19, 248);
+  color: #00b7d9;
 }
 .right-container .center-part {
   display: flex;
@@ -460,8 +459,11 @@ main article .intervention-container .grid-container .oppacity {
   font-size: 1.2rem;
 }
 main article .intervention-container .grid-container .picture {
-  border: solid 5px #dfdfdf;
+  border: solid 5px #00b7d9;
   border-radius: 25px;
+  box-shadow: 0px 5px 117px 45px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 5px 117px 45px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 5px 117px 45px rgba(0, 0, 0, 0.5);
 }
 main article .intervention-container .grid-container .pic-one {
   background: url("../../../assets/img/mouse.jpg") center/cover;
@@ -487,16 +489,21 @@ main .table-container table {
   padding-bottom: 20px;
   margin: 0 auto;
 }
-main .table-container table th {
-  background-color: rgb(7, 19, 248);
-  padding: 20px 0;
-}
 main .table-container table td {
   text-align: left;
   padding: 10px 20px;
 }
+main .table-container table td:nth-child(1) {
+  border-radius: 10px 0 0 10px;
+}
+main .table-container table td:nth-child(2) {
+  border-radius: 0 10px 10px 0;
+}
 main .table-container table tr:nth-child(even) {
-  background-color: rgba(142, 212, 221, 0.7);
+  background-color: #1c1c1c;
+}
+main .table-container table tr:nth-child(even) td {
+  color: #dfdfdf;
 }
 main .table-container table tr:nth-child(odd) {
   background-color: #dfdfdf;
@@ -515,6 +522,12 @@ section {
   align-items: center;
   background-color: #dfdfdf;
   padding: 0 20px;
+  box-shadow: 0px 5px 117px 45px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 5px 117px 45px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 5px 117px 45px rgba(0, 0, 0, 0.5);
+}
+section i {
+  color: #00b7d9;
 }
 section .client-quality {
   display: flex;
@@ -650,47 +663,46 @@ article hr {
   margin: 5px auto;
   width: 50%;
   height: 5px;
-  background-color: #000000;
-  border: #000000;
+  background-color: #00b7d9;
+  border: #00b7d9;
 }
-
-section .prestation-card {
+article .prestation-card {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   width: 100%;
 }
-section .prestation-card .card {
+article .prestation-card .card {
   width: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(7, 19, 248);
+  background-color: #00b7d9;
   margin: 20px auto;
   padding: 20px 10px;
   border-radius: 10px;
 }
-section .prestation-card .card .product-description {
+article .prestation-card .card .product-description {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   margin: 0;
 }
-section .prestation-card .card .product-description img {
+article .prestation-card .card .product-description img {
   height: 100px;
   width: 100px;
   border-radius: 5px;
 }
-section .prestation-card .card .product-description h3 {
+article .prestation-card .card .product-description h3 {
   font-size: 0.9rem;
 }
-section .prestation-card .card .product-description p {
+article .prestation-card .card .product-description p {
   margin: 20px 0;
   font-size: 0.9rem;
 }
-section .prestation-card .card .product-price {
+article .prestation-card .card .product-price {
   width: 100%;
   background-color: #727272;
   width: 75%;
@@ -699,21 +711,21 @@ section .prestation-card .card .product-price {
 }
 
 @media screen and (min-width: 768px) {
-  section .prestation-card .card {
+  article .prestation-card .card {
     width: 350px;
     margin: 10px auto;
   }
-  section .prestation-card .card .product-description {
+  article .prestation-card .card .product-description {
     height: 100%;
   }
-  section .prestation-card .card .product-description img {
+  article .prestation-card .card .product-description img {
     width: 90%;
     height: 50%;
   }
-  section .prestation-card .card .product-description h3 {
+  article .prestation-card .card .product-description h3 {
     font-size: 1.5rem;
   }
-  section .prestation-card .card .product-description p {
+  article .prestation-card .card .product-description p {
     font-size: 1.2rem;
   }
 }
@@ -865,16 +877,16 @@ main form div input {
   border-radius: 10px;
   border: none;
   outline: none;
-  box-shadow: 1px 2px 36px -7px #000000;
-  -webkit-box-shadow: 1px 2px 36px -7px #000000;
-  -moz-box-shadow: 1px 2px 36px -7px #000000;
+  box-shadow: 1px 2px 36px -7px #1c1c1c;
+  -webkit-box-shadow: 1px 2px 36px -7px #1c1c1c;
+  -moz-box-shadow: 1px 2px 36px -7px #1c1c1c;
 }
 main form div input:focus {
   outline: none;
   outline: none;
-  box-shadow: 1px 2px 36px -7px rgb(7, 19, 248);
-  -webkit-box-shadow: 1px 2px 36px -7px rgb(7, 19, 248);
-  -moz-box-shadow: 1px 2px 36px -7px rgb(7, 19, 248);
+  box-shadow: 1px 2px 36px -7px #00b7d9;
+  -webkit-box-shadow: 1px 2px 36px -7px #00b7d9;
+  -moz-box-shadow: 1px 2px 36px -7px #00b7d9;
 }
 main form div select,
 main form div textarea {
@@ -883,17 +895,17 @@ main form div textarea {
   padding: 10px 0;
   border-radius: 10px;
   outline: none;
-  box-shadow: 1px 2px 36px -7px #000000;
-  -webkit-box-shadow: 1px 2px 36px -7px #000000;
-  -moz-box-shadow: 1px 2px 36px -7px #000000;
+  box-shadow: 1px 2px 36px -7px #1c1c1c;
+  -webkit-box-shadow: 1px 2px 36px -7px #1c1c1c;
+  -moz-box-shadow: 1px 2px 36px -7px #1c1c1c;
 }
 main form div select:focus, main form div select:active,
 main form div textarea:focus,
 main form div textarea:active {
   outline: none;
-  box-shadow: 1px 2px 36px -7px rgb(7, 19, 248);
-  -webkit-box-shadow: 1px 2px 36px -7px rgb(7, 19, 248);
-  -moz-box-shadow: 1px 2px 36px -7px rgb(7, 19, 248);
+  box-shadow: 1px 2px 36px -7px #00b7d9;
+  -webkit-box-shadow: 1px 2px 36px -7px #00b7d9;
+  -moz-box-shadow: 1px 2px 36px -7px #00b7d9;
 }
 main form div label {
   font-size: 1.5rem;

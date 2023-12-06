@@ -42,8 +42,9 @@ main {
                     font-size: 1.2rem;
                 }
                 .picture {
-                    border: solid 5px $color4;
+                    border: solid 5px $color1;
                     border-radius: 25px;
+                    @include box-shadow-black;
                 }
                 .pic-one {
                     background: url('../../../assets/img/mouse.jpg')
@@ -75,16 +76,22 @@ main {
             font-size: 0.8rem;
             padding-bottom: 20px;
             margin: 0 auto;
-            th {
-                background-color: $color1;
-                padding: 20px 0;
-            }
             td {
                 text-align: left;
                 padding: 10px 20px;
             }
+            td:nth-child(1) {
+                border-radius: 10px 0 0 10px;
+            }
+            td:nth-child(2) {
+                border-radius: 0 10px 10px 0;
+            }
+
             tr:nth-child(even) {
-                background-color: rgba(142, 212, 221, 0.7);
+                background-color: $color2;
+                td {
+                    color: $color4;
+                }
             }
             tr:nth-child(odd) {
                 background-color: $color4;
@@ -107,6 +114,10 @@ section {
     align-items: center;
     background-color: $color4;
     padding: 0 20px;
+    @include box-shadow-black;
+    i {
+        color: $color1;
+    }
 
     .client-quality {
         display: flex;

@@ -89,7 +89,6 @@ header {
 header {
     position: sticky;
     top: 0px;
-    z-index: 2;
 }
 main {
     margin: 50px 100px;
@@ -133,9 +132,10 @@ main {
                 padding-right: 50px;
                 li {
                     font-weight: bold;
-                }
-                p {
-                    padding: 0 0 20px 50px;
+                    p {
+                        font-weight: normal;
+                        padding: 0 0 20px 50px;
+                    }
                 }
             }
         }

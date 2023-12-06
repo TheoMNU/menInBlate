@@ -844,7 +844,7 @@ main .title h2 {
 }
 main form {
   text-align: center;
-  padding-bottom: 50px;
+  padding: 0 20px 50px 20px;
   width: 60%;
   margin: 0 auto;
   display: grid;
@@ -864,6 +864,17 @@ main form div input {
   padding: 10px 0;
   border-radius: 10px;
   border: none;
+  outline: none;
+  box-shadow: 1px 2px 36px -7px #000000;
+  -webkit-box-shadow: 1px 2px 36px -7px #000000;
+  -moz-box-shadow: 1px 2px 36px -7px #000000;
+}
+main form div input:focus {
+  outline: none;
+  outline: none;
+  box-shadow: 1px 2px 36px -7px rgb(7, 19, 248);
+  -webkit-box-shadow: 1px 2px 36px -7px rgb(7, 19, 248);
+  -moz-box-shadow: 1px 2px 36px -7px rgb(7, 19, 248);
 }
 main form div select,
 main form div textarea {
@@ -871,6 +882,18 @@ main form div textarea {
   margin: 10px;
   padding: 10px 0;
   border-radius: 10px;
+  outline: none;
+  box-shadow: 1px 2px 36px -7px #000000;
+  -webkit-box-shadow: 1px 2px 36px -7px #000000;
+  -moz-box-shadow: 1px 2px 36px -7px #000000;
+}
+main form div select:focus, main form div select:active,
+main form div textarea:focus,
+main form div textarea:active {
+  outline: none;
+  box-shadow: 1px 2px 36px -7px rgb(7, 19, 248);
+  -webkit-box-shadow: 1px 2px 36px -7px rgb(7, 19, 248);
+  -moz-box-shadow: 1px 2px 36px -7px rgb(7, 19, 248);
 }
 main form div label {
   font-size: 1.5rem;
@@ -913,4 +936,108 @@ main form .button {
 main form .button input {
   width: 30%;
   font-size: 1.5rem;
+}
+main .contact {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+main .contact ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .contact ul li {
+  margin: 20px 0;
+}
+main .contact ul li i {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+main .contact .map {
+  display: flex;
+}
+main .contact .map iframe {
+  margin: auto;
+  flex-shrink: 2;
+  height: 75%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  main .title h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  main form {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 20% 1% 10%;
+    grid-template-areas: " a a" "b b" "c c" "d d" "e e" "f f" "g g" "h h" "i i";
+    row-gap: 20px;
+    margin-bottom: 50px;
+  }
+  main form div > label {
+    font-size: 1rem;
+  }
+  main form .sex {
+    grid-area: a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main form .sex .men,
+  main form .sex .women {
+    margin: 0 20px;
+  }
+  main form .last-name {
+    grid-area: b;
+  }
+  main form .first-name {
+    grid-area: c;
+  }
+  main form .email {
+    grid-area: d;
+  }
+  main form .phone-number {
+    grid-area: e;
+  }
+  main form .choice {
+    grid-area: f;
+  }
+  main form .message {
+    grid-area: g;
+  }
+  main form .cgv {
+    grid-area: h;
+  }
+  main form .button {
+    grid-area: i;
+  }
+  main form .button input {
+    width: 50%;
+    font-size: 1rem;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 0 20px 50px 20px;
+  }
+  .contact ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contact ul li {
+    margin: 20px 0;
+  }
+  .contact ul li i {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .contact .map {
+    display: flex;
+  }
 }/*# sourceMappingURL=style.css.map */

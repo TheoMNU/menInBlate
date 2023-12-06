@@ -82,7 +82,6 @@ header .header-right p {
 header {
   position: sticky;
   top: 0px;
-  z-index: 2;
 }
 
 main {
@@ -131,7 +130,8 @@ main .container .cgv ol {
 main .container .cgv ol li {
   font-weight: bold;
 }
-main .container .cgv ol p {
+main .container .cgv ol li p {
+  font-weight: normal;
   padding: 0 0 20px 50px;
 }
 main a {

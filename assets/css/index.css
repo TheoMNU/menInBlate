@@ -227,7 +227,7 @@ nav::after {
   width: 90%;
   height: 2px;
   background-color: #00b7d9;
-  opacity: 0.3;
+  opacity: 0.7;
   left: 50%;
   transform: translate(-50%, -50%);
   bottom: -10px;
@@ -489,16 +489,16 @@ header {
 }
 
 nav {
-  height: 4vh;
+  height: 5vh;
   margin-bottom: 0;
 }
 nav::after {
-  top: 4vh;
+  top: 5vh;
 }
 
 main {
   text-align: center;
-  height: 76vh;
+  height: 75vh;
   background-color: transparent;
 }
 main label {
@@ -532,14 +532,14 @@ main input:checked + label {
 }
 main input + label::after {
   content: "";
-  background-image: url("../img/chevron-left-solid.svg");
+  background-image: url("../img/chevron-left-blue.svg");
   background-repeat: no-repeat;
   background-position: center 50%;
   background-size: 80px 80px;
   line-height: 100vh;
   transition: background-size 200ms;
   position: absolute;
-  height: 76vh;
+  height: 75vh;
   width: 80px;
   top: 25vh;
   left: 0;
@@ -558,8 +558,7 @@ main input:checked + label + .slide ~ input + label::after {
   display: none;
 }
 main input:checked + label + .slide + input + label::after {
-  background-image: url("../img/chevron-right-solid.svg");
-  display: block;
+  background-image: url("../img/chevron-right-blue.svg");
   width: 80px;
   right: 0;
   left: auto;
@@ -580,8 +579,8 @@ main .slide {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 76vh;
-  top: 24vh;
+  height: 75vh;
+  top: 25vh;
   left: 0;
   z-index: -1;
   transform: translateX(-100%);
@@ -592,21 +591,22 @@ main .slide p {
   font-size: 3rem;
   padding: 15vh 100px;
   align-content: center;
+  color: #00b7d9;
 }
 main .bg1 {
-  background-image: url(https://images.unsplash.com/photo-1422806310414-91469fe4977e?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=114e7a73b2385128045a5555b981e939);
+  background-image: url("../img/dirtyRoom.jpg");
 }
 main .bg2 {
-  background-image: url(https://images.unsplash.com/photo-1490020641477-3b0e96306b9a?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=d8358f021c68f49335fe44b10f70b700);
+  background-image: url("../img/hornet.jpg");
 }
 main .bg3 {
-  background-image: url(https://images.unsplash.com/photo-1512529111457-3e8a595ef8e9?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=9b3ab76b65a358830d60ca43be76f2e1);
+  background-image: url("../img/larvae.jpg");
 }
 main .bg4 {
-  background-image: url(https://images.unsplash.com/photo-1504700610630-ac6aba3536d3?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=92d2cae094fb24e5266221828ee251e2);
+  background-image: url("../img/mouses.jpg");
 }
 main .bg5 {
-  background-image: url(https://images.unsplash.com/reserve/wPCyys8TPCHY3GXm2N2D_ssp_inthewoods_1.jpg?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=654d988a19f43ca9ac27f2eacbe2a554);
+  background-image: url("../img/capricorne.jpeg");
 }
 
 @media screen and (max-width: 768px) {

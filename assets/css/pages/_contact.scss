@@ -46,6 +46,10 @@ main {
                     -webkit-box-shadow: 1px 2px 36px -7px $color1;
                     -moz-box-shadow: 1px 2px 36px -7px $color1;
                 }
+                &:focus::placeholder,
+                &:active::placeholder {
+                    color: transparent;
+                }
             }
             select,
             textarea {
@@ -55,14 +59,20 @@ main {
                 border-radius: 10px;
                 outline: none;
                 box-shadow: 1px 2px 36px -7px $color2;
+                box-shadow: 1px 2px 36px -7px $color2;
                 -webkit-box-shadow: 1px 2px 36px -7px $color2;
                 -moz-box-shadow: 1px 2px 36px -7px $color2;
                 &:focus,
                 &:active {
                     outline: none;
+                    // caret-color: transparent;
                     box-shadow: 1px 2px 36px -7px $color1;
                     -webkit-box-shadow: 1px 2px 36px -7px $color1;
                     -moz-box-shadow: 1px 2px 36px -7px $color1;
+                }
+                &:focus::placeholder,
+                &:active::placeholder {
+                    color: transparent;
                 }
             }
             label {

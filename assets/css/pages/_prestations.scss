@@ -10,32 +10,35 @@ article {
     }
 
     .prestation-card {
+        margin: 0 auto;
         display: flex;
         flex-flow: row wrap;
-        justify-content: center;
+        justify-content: space-evenly;
+        gap: 20px;
         width: 100%;
 
         .card {
-            width: 120px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: space-between;
-            background-color: $color1;
-            margin: 20px auto;
+            border: solid 2px $color1;
+            @include box-shadow-black;
             padding: 20px 10px;
             border-radius: 10px;
+            width: 250px;
 
             .product-description {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                width: 100%;
+                align-content: start;
                 margin: 0;
+                gap: 10px;
                 img {
-                    height: 100px;
-                    width: 100px;
+                    width: 100%;
+                    height: 200px;
                     border-radius: 5px;
+                    @include box-shadow-white;
                 }
                 h3 {
                     font-size: 0.9rem;
@@ -47,33 +50,39 @@ article {
             }
 
             .product-price {
-                width: 100%;
-                background-color: $color3;
-                width: 75%;
+                background-color: $color2;
+
+                width: 50%;
                 padding: 5px;
                 border-radius: 50px;
+                a {
+                    color: $color1;
+                }
             }
         }
     }
 }
 
 @media screen and (min-width: 768px) {
-    article {
-        .prestation-card {
-            .card {
-                width: 350px;
-                margin: 10px auto;
-                .product-description {
-                    height: 100%;
-                    img {
-                        width: 90%;
-                        height: 50%;
-                    }
-                    h3 {
-                        font-size: 1.5rem;
-                    }
-                    p {
-                        font-size: 1.2rem;
+    main {
+        article {
+            .prestation-card {
+                justify-content: space-evenly;
+                .card {
+                    margin: 10px auto;
+                    background-color: $color3;
+
+                    .product-description {
+                        img {
+                            width: 100%;
+                            margin: 10px 0;
+                        }
+                        h3 {
+                            font-size: 1.5rem;
+                        }
+                        p {
+                            font-size: 1.2rem;
+                        }
                     }
                 }
             }

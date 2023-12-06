@@ -1,3 +1,5 @@
+/* ------------------- Variable ----------------- */
+/* ------------------- Mixin ----------------- */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,7 +15,27 @@ body {
   max-width: 2100px;
 }
 
+main {
+  margin: 0 auto;
+  background-color: #727272;
+}
+main h2 {
+  font-size: 2rem;
+  padding-bottom: 50px;
+}
+main h3 {
+  font-size: 1.5rem;
+}
+main h4 {
+  padding: 10px;
+  font-size: 1.5rem;
+}
+main p {
+  font-size: 1.2rem;
+}
+
 /* ------------------- Variable ----------------- */
+/* ------------------- Mixin ----------------- */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -29,7 +51,25 @@ body {
   max-width: 2100px;
 }
 
-/* ------------------- Variable ----------------- */
+main {
+  margin: 0 auto;
+  background-color: #727272;
+}
+main h2 {
+  font-size: 2rem;
+  padding-bottom: 50px;
+}
+main h3 {
+  font-size: 1.5rem;
+}
+main h4 {
+  padding: 10px;
+  font-size: 1.5rem;
+}
+main p {
+  font-size: 1.2rem;
+}
+
 header {
   display: flex;
   height: 150px;
@@ -101,6 +141,8 @@ header .header-right p {
     color: #dfdfdf;
   }
 }
+/* ------------------- Variable ----------------- */
+/* ------------------- Mixin ----------------- */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -116,7 +158,25 @@ body {
   max-width: 2100px;
 }
 
-/* ------------------- Variable ----------------- */
+main {
+  margin: 0 auto;
+  background-color: #727272;
+}
+main h2 {
+  font-size: 2rem;
+  padding-bottom: 50px;
+}
+main h3 {
+  font-size: 1.5rem;
+}
+main h4 {
+  padding: 10px;
+  font-size: 1.5rem;
+}
+main p {
+  font-size: 1.2rem;
+}
+
 /* --------------------- NavBar ----------------- */
 nav {
   width: 100%;
@@ -284,6 +344,8 @@ nav::after {
     color: none;
   }
 }
+/* ------------------- Variable ----------------- */
+/* ------------------- Mixin ----------------- */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -299,10 +361,29 @@ body {
   max-width: 2100px;
 }
 
-/* ------------------- Variable ----------------- */
+main {
+  margin: 0 auto;
+  background-color: #727272;
+}
+main h2 {
+  font-size: 2rem;
+  padding-bottom: 50px;
+}
+main h3 {
+  font-size: 1.5rem;
+}
+main h4 {
+  padding: 10px;
+  font-size: 1.5rem;
+}
+main p {
+  font-size: 1.2rem;
+}
+
 /* ------------------------------------------- Footer ------------------------------------------- */
 footer {
-  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(40, 40, 40) 63%, rgb(75, 75, 75) 90%);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(14, 14, 14) 92%, rgb(35, 35, 35) 94%, rgb(58, 58, 58) 96%, rgb(78, 78, 78) 97%, rgb(153, 153, 153) 99%, rgb(255, 255, 255) 100%);
   display: flex;
   width: 100%;
   padding: 20px 0;
@@ -315,7 +396,7 @@ footer li {
   padding: 5px;
 }
 footer a {
-  color: #727272;
+  color: #dfdfdf;
 }
 
 /* -------------------- Left-Container -------------------- */
@@ -334,11 +415,11 @@ footer a {
   padding: 10px 0 20px 0;
 }
 .left-container .left-part ul li {
-  color: #727272;
+  color: #dfdfdf;
 }
 .left-container .left-part ul i {
   font-size: 2rem;
-  color: #727272;
+  color: #dfdfdf;
 }
 .left-container .left-part ul li:hover,
 .left-container .left-part ul i:hover {
@@ -418,6 +499,7 @@ nav::after {
 main {
   text-align: center;
   height: 76vh;
+  background-color: transparent;
 }
 main label {
   display: inline-block;

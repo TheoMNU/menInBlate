@@ -2,13 +2,36 @@
 
 article {
     hr {
+        position: relative;
         margin: 5px auto;
         width: 50%;
         height: 5px;
-        background-color: $color1;
+        background-color: white;
         border: $color1;
-    }
 
+        &::before {
+            inset: 0;
+            position: absolute;
+            content: '';
+            background: rgb(255, 255, 255);
+            background: linear-gradient(
+                90deg,
+                rgba(0, 183, 217, 1) 40%,
+                rgba(255, 255, 255, 1) 50%,
+                rgba(0, 183, 217, 1) 60%
+            );
+            animation: light-effect 3s ease-out infinite;
+            background-size: 300%;
+        }
+    }
+    @keyframes light-effect {
+        0% {
+            background-position: 100% 0;
+        }
+        100% {
+            background-posioion: 0% 0;
+        }
+    }
     .prestation-card {
         margin: 0 auto;
         display: flex;

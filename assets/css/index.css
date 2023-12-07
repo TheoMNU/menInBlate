@@ -558,6 +558,7 @@ main input:checked + label + .slide ~ input + label::after {
   display: none;
 }
 main input:checked + label + .slide + input + label::after {
+  display: block;
   background-image: url("../img/chevron-right-blue.svg");
   width: 80px;
   right: 0;
@@ -588,7 +589,8 @@ main .slide {
   opacity: 1;
 }
 main .slide p {
-  font-size: 3rem;
+  text-shadow: 0px 0px 25px rgb(255, 255, 255);
+  font-size: 2rem;
   padding: 15vh 100px;
   align-content: center;
   color: #00b7d9;

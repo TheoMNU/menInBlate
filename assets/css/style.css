@@ -517,7 +517,6 @@ main p {
 }
 
 .go-head {
-  display: none;
   text-align: center;
   height: 50px;
   width: 50px;
@@ -570,6 +569,9 @@ main article .intervention-container .grid-container .picture {
   box-shadow: 0px 5px 117px 45px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0px 5px 117px 45px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 5px 117px 45px rgba(0, 0, 0, 0.5);
+}
+main article .intervention-container .grid-container .picture:hover {
+  border: solid 5px #00b7d9;
 }
 main article .intervention-container .grid-container .pic-one {
   background: url("../../../assets/img/mouse.jpg") center/cover;
@@ -797,11 +799,29 @@ main p {
 }
 
 article hr {
+  position: relative;
   margin: 5px auto;
   width: 50%;
   height: 5px;
-  background-color: #00b7d9;
+  background-color: white;
   border: #00b7d9;
+}
+article hr::before {
+  inset: 0;
+  position: absolute;
+  content: "";
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgb(0, 183, 217) 40%, rgb(255, 255, 255) 50%, rgb(0, 183, 217) 60%);
+  animation: light-effect 3s ease-out infinite;
+  background-size: 300%;
+}
+@keyframes light-effect {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-posioion: 0% 0;
+  }
 }
 article .prestation-card {
   margin: 0 auto;

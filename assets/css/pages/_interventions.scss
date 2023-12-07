@@ -1,6 +1,6 @@
 @import '../settings';
 .go-head {
-    display: none;
+    // display: none;
     text-align: center;
     height: 50px;
     width: 50px;
@@ -53,6 +53,9 @@ main {
                     border: solid 5px $color2;
                     border-radius: 25px;
                     @include box-shadow-black;
+                    &:hover {
+                        border: solid 5px $color1;
+                    }
                 }
                 .pic-one {
                     background: url('../../../assets/img/mouse.jpg')

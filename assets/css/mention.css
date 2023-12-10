@@ -8,41 +8,67 @@
   text-decoration: none;
 }
 
-header {
+body .go-head {
+  display: none;
+}
+body .go-head.active {
+  display: flex;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background-color: #00d7b9;
+  position: fixed;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+body .go-head.active a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+body .go-head.active a i {
+  font-size: 2rem;
+}
+body header {
   display: flex;
   height: 150px;
   background-color: black;
   padding: 5px 10px;
 }
-header .header-container {
+body header .header-container {
   display: flex;
   width: 100%;
 }
-header .logo {
+body header .logo {
   width: 20%;
   color: grey;
 }
-header .logo p {
+body header .logo p {
   display: none;
 }
-header img {
+body header img {
   width: 100%;
   height: 100%;
   border-radius: 10px;
 }
-header .header-right {
+body header .header-right {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 80%;
 }
-header a {
+body header a {
   font-size: 2.5rem;
   text-transform: uppercase;
   color: white;
 }
-header .header-right p {
+body header .header-right p {
   font-size: 0.8rem;
   font-style: italic;
   color: white;

@@ -8,11 +8,39 @@
   font-family: "lexend", sans-serif;
   text-decoration: none;
   color: #000000;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0 auto;
   max-width: 2100px;
+}
+
+.go-head {
+  display: none;
+}
+.go-head.active {
+  display: flex;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background-color: #00b7d9;
+  position: fixed;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+.go-head.active a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.go-head.active a i {
+  font-size: 2rem;
 }
 
 main {
@@ -44,11 +72,39 @@ main p {
   font-family: "lexend", sans-serif;
   text-decoration: none;
   color: #000000;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0 auto;
   max-width: 2100px;
+}
+
+.go-head {
+  display: none;
+}
+.go-head.active {
+  display: flex;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background-color: #00b7d9;
+  position: fixed;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+.go-head.active a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.go-head.active a i {
+  font-size: 2rem;
 }
 
 main {
@@ -151,11 +207,39 @@ header .header-right p {
   font-family: "lexend", sans-serif;
   text-decoration: none;
   color: #000000;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0 auto;
   max-width: 2100px;
+}
+
+.go-head {
+  display: none;
+}
+.go-head.active {
+  display: flex;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background-color: #00b7d9;
+  position: fixed;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+.go-head.active a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.go-head.active a i {
+  font-size: 2rem;
 }
 
 main {
@@ -354,11 +438,39 @@ nav::after {
   font-family: "lexend", sans-serif;
   text-decoration: none;
   color: #000000;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0 auto;
   max-width: 2100px;
+}
+
+.go-head {
+  display: none;
+}
+.go-head.active {
+  display: flex;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background-color: #00b7d9;
+  position: fixed;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+.go-head.active a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.go-head.active a i {
+  font-size: 2rem;
 }
 
 main {
@@ -490,11 +602,39 @@ footer a {
   font-family: "lexend", sans-serif;
   text-decoration: none;
   color: #000000;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0 auto;
   max-width: 2100px;
+}
+
+.go-head {
+  display: none;
+}
+.go-head.active {
+  display: flex;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background-color: #00b7d9;
+  position: fixed;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+.go-head.active a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.go-head.active a i {
+  font-size: 2rem;
 }
 
 main {
@@ -514,28 +654,6 @@ main h4 {
 }
 main p {
   font-size: 1.2rem;
-}
-
-.go-head {
-  text-align: center;
-  height: 50px;
-  width: 50px;
-  border-radius: 50px;
-  background-color: #00b7d9;
-  position: absolute;
-  top: 0px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.go-head .arrow-top {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-.go-head .arrow-top i {
-  font-size: 2rem;
 }
 
 main article {
@@ -772,11 +890,39 @@ section div q {
   font-family: "lexend", sans-serif;
   text-decoration: none;
   color: #000000;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0 auto;
   max-width: 2100px;
+}
+
+.go-head {
+  display: none;
+}
+.go-head.active {
+  display: flex;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background-color: #00b7d9;
+  position: fixed;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+.go-head.active a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.go-head.active a i {
+  font-size: 2rem;
 }
 
 main {
@@ -905,11 +1051,39 @@ article .prestation-card .card .product-price a {
   font-family: "lexend", sans-serif;
   text-decoration: none;
   color: #000000;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0 auto;
   max-width: 2100px;
+}
+
+.go-head {
+  display: none;
+}
+.go-head.active {
+  display: flex;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background-color: #00b7d9;
+  position: fixed;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+.go-head.active a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.go-head.active a i {
+  font-size: 2rem;
 }
 
 main {
@@ -1029,11 +1203,39 @@ main .history .rest {
   font-family: "lexend", sans-serif;
   text-decoration: none;
   color: #000000;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0 auto;
   max-width: 2100px;
+}
+
+.go-head {
+  display: none;
+}
+.go-head.active {
+  display: flex;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background-color: #00b7d9;
+  position: fixed;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+.go-head.active a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.go-head.active a i {
+  font-size: 2rem;
 }
 
 main {

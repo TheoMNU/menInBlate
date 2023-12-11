@@ -27,7 +27,7 @@ body {
   border-radius: 50px;
   background-color: #00b7d9;
   position: fixed;
-  top: 0px;
+  top: 10px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
@@ -91,7 +91,7 @@ body {
   border-radius: 50px;
   background-color: #00b7d9;
   position: fixed;
-  top: 0px;
+  top: 10px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
@@ -226,7 +226,7 @@ body {
   border-radius: 50px;
   background-color: #00b7d9;
   position: fixed;
-  top: 0px;
+  top: 10px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
@@ -457,7 +457,7 @@ body {
   border-radius: 50px;
   background-color: #00b7d9;
   position: fixed;
-  top: 0px;
+  top: 10px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
@@ -621,7 +621,7 @@ body {
   border-radius: 50px;
   background-color: #00b7d9;
   position: fixed;
-  top: 0px;
+  top: 10px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
@@ -676,9 +676,9 @@ main article .intervention-container .grid-container .oppacity {
   justify-content: center;
   opacity: 0;
   background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 20px;
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
+  border-radius: 20px;
   font-size: 1.2rem;
 }
 main article .intervention-container .grid-container .picture {
@@ -692,13 +692,19 @@ main article .intervention-container .grid-container .picture:hover {
   border: solid 5px #00b7d9;
 }
 main article .intervention-container .grid-container .pic-one {
-  background: url("../../../assets/img/mouse.jpg") center/cover;
+  background-image: url("../../../../theo/menInBlate/assets/img/mouse.jpg");
+  background-size: cover;
+  background-position: center;
 }
 main article .intervention-container .grid-container .pic-two {
-  background: url("../../../assets/img/larves.jpg") center/cover;
+  background-image: url("../../../../theo/menInBlate/assets/img/larves.jpg");
+  background-size: cover;
+  background-position: center;
 }
 main article .intervention-container .grid-container .pic-three {
-  background: url("../../../assets/img/ruche.jpg") center/cover;
+  background-image: url("../../../../theo/menInBlate/assets/img/ruche.jpg");
+  background-size: cover;
+  background-position: center;
 }
 main article .intervention-container .grid-container .text {
   display: flex;
@@ -909,7 +915,7 @@ body {
   border-radius: 50px;
   background-color: #00b7d9;
   position: fixed;
-  top: 0px;
+  top: 10px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
@@ -981,7 +987,7 @@ article .prestation-card .card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: solid 2px #00b7d9;
+  border: solid 2px #727272;
   box-shadow: 0px 5px 117px 45px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0px 5px 117px 45px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 5px 117px 45px rgba(0, 0, 0, 0.5);
@@ -1070,7 +1076,7 @@ body {
   border-radius: 50px;
   background-color: #00b7d9;
   position: fixed;
-  top: 0px;
+  top: 10px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
@@ -1222,7 +1228,7 @@ body {
   border-radius: 50px;
   background-color: #00b7d9;
   position: fixed;
-  top: 0px;
+  top: 10px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
@@ -1373,27 +1379,34 @@ main form .button input {
   font-size: 1.5rem;
 }
 main .contact {
-  display: flex;
   gap: 50px;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   padding-bottom: 50px;
 }
-main .contact ul {
+main .contact .contact-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+}
+main .contact .contact-container ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-main .contact ul li {
+main .contact .contact-container ul li {
   margin: 20px 0;
 }
-main .contact ul li i {
+main .contact .contact-container ul li i {
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
-main .contact .map {
+main .contact .contact-container .map {
   display: flex;
 }
-main .contact .map iframe {
+main .contact .contact-container .map iframe {
   margin: auto;
   flex-shrink: 2;
   height: 75%;
@@ -1454,25 +1467,29 @@ main .contact .map iframe {
     width: 50%;
     font-size: 1rem;
   }
-  .contact {
+  main .contact {
     display: flex;
     flex-direction: column;
     gap: 50px;
     padding: 0 20px 50px 20px;
   }
-  .contact ul {
+  main .contact .contact-container {
+    display: flex;
+    flex-direction: column;
+  }
+  main .contact .contact-container ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .contact ul li {
+  main .contact .contact-container ul li {
     margin: 20px 0;
   }
-  .contact ul li i {
+  main .contact .contact-container ul li i {
     font-size: 1.5rem;
     margin-bottom: 10px;
   }
-  .contact .map {
+  main .contact .contact-container .map {
     display: flex;
   }
 }/*# sourceMappingURL=style.css.map */

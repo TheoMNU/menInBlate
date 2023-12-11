@@ -121,30 +121,37 @@ main {
     }
 
     .contact {
-        display: flex;
         gap: 50px;
-        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
         padding-bottom: 50px;
-        ul {
+        .contact-container {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             justify-content: center;
-            li {
-                margin: 20px 0;
-                i {
-                    font-size: 1.5rem;
-                    margin-bottom: 10px;
+            gap: 50px;
+            ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                li {
+                    margin: 20px 0;
+                    i {
+                        font-size: 1.5rem;
+                        margin-bottom: 10px;
+                    }
                 }
             }
-        }
-        .map {
-            display: flex;
-            iframe {
-                margin: auto;
-                flex-shrink: 2;
-                height: 75%;
-                width: 100%;
-                border-radius: 10px;
+            .map {
+                display: flex;
+                iframe {
+                    margin: auto;
+                    flex-shrink: 2;
+                    height: 75%;
+                    width: 100%;
+                    border-radius: 10px;
+                }
             }
         }
     }
@@ -209,26 +216,30 @@ main {
                 }
             }
         }
-    }
-    .contact {
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-        padding: 0 20px 50px 20px;
-        ul {
+        .contact {
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            li {
-                margin: 20px 0;
-                i {
-                    font-size: 1.5rem;
-                    margin-bottom: 10px;
+            gap: 50px;
+            padding: 0 20px 50px 20px;
+            .contact-container {
+                display: flex;
+                flex-direction: column;
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    li {
+                        margin: 20px 0;
+                        i {
+                            font-size: 1.5rem;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+                .map {
+                    display: flex;
                 }
             }
-        }
-        .map {
-            display: flex;
         }
     }
 }

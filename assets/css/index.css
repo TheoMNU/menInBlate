@@ -27,7 +27,7 @@ body {
   border-radius: 50px;
   background-color: #00b7d9;
   position: fixed;
-  top: 0px;
+  top: 10px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
@@ -91,7 +91,7 @@ body {
   border-radius: 50px;
   background-color: #00b7d9;
   position: fixed;
-  top: 0px;
+  top: 10px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
@@ -226,7 +226,7 @@ body {
   border-radius: 50px;
   background-color: #00b7d9;
   position: fixed;
-  top: 0px;
+  top: 10px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
@@ -457,7 +457,7 @@ body {
   border-radius: 50px;
   background-color: #00b7d9;
   position: fixed;
-  top: 0px;
+  top: 10px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
